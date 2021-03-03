@@ -1,0 +1,228 @@
+/*
+= IMPORTING STUFF AND SETTING DEFAULT STYLES
+-------------------------------------------------------------------------------------- */
+
+@import url(reset.css);
+
+/*
+= FONT EMBEDING
+-------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'NeoplantaBGRegular';
+    src: url('../fonts/neoplantabg-webfont.eot');
+    src: url('../fonts/neoplantabg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neoplantabg-webfont.woff') format('woff'),
+         url('../fonts/neoplantabg-webfont.ttf') format('truetype'),
+         url('../fonts/neoplantabg-webfont.svg#NeoplantaBGRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeoplantaBGItalic';
+    src: url('../fonts/neoplantabg-italic-webfont.eot');
+    src: url('../fonts/neoplantabg-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neoplantabg-italic-webfont.woff') format('woff'),
+         url('../fonts/neoplantabg-italic-webfont.ttf') format('truetype'),
+         url('../fonts/neoplantabg-italic-webfont.svg#NeoplantaBGItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeoplantaBGBold';
+    src: url('../fonts/neoplantabg-bold-webfont.eot');
+    src: url('../fonts/neoplantabg-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neoplantabg-bold-webfont.woff') format('woff'),
+         url('../fonts/neoplantabg-bold-webfont.ttf') format('truetype'),
+         url('../fonts/neoplantabg-bold-webfont.svg#NeoplantaBGBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+= COMMON
+-------------------------------------------------------------------------------------- */
+body,
+html{
+	height:100%;
+	}
+body{
+	background:url(../images/center-bg.jpg) top center repeat-y;
+	}
+	h1, h2, h3,a{
+		color:#005b2d; font-family: 'NeoplantaBGBold'; font-weight:normal; font-style:normal;
+		}
+	h4, h5{
+		font-family: 'NeoplantaBGRegular'; font-weight:normal; font-style:normal;
+		}
+	a{text-decoration:underline;}
+	
+	.main p{
+		font-size:14px; line-height:21px; color:grey;
+		margin-bottom:20px; text-align:justify;
+		}
+		
+	.wrap{
+		width:960px; height:100%; 
+		margin:0px auto;
+		}
+		
+		.header{
+			height:287px;
+			}
+			.header h1{
+				text-align:center;
+				}
+				.header h1 a{
+					margin-top:50px;
+					display:inline-block; *display:block; *margin:50px auto auto auto;
+					width:268px; height:192px;
+					text-indent:-9999px;outline:none; border:none;
+					background:url(../images/logo.jpg) 0 0 no-repeat;
+					}
+				.header h2{
+					position:absolute; right:20px; bottom:0px; z-index:1000; 
+					width:347px; height:82px; 
+					font-family: 'NeoplantaBGItalic'; font-size:20px; line-height:82px; text-align:right; 
+					background:url(../images/tbas-logo.jpg) top right no-repeat;
+					}
+					.header h2 a{
+						display:block;
+						padding:0px 95px 0px 0px;
+						font-family: 'NeoplantaBGItalic'; font-size:20px; font-weight:normal; text-decoration:none;
+						}
+					
+			.main{
+				min-height:610px;
+				}
+				.banner-img{
+					display:block;
+					margin:-63px 0px 50px 0px;
+					}
+				.main h3{
+					margin:0px 0px 40px 0px;
+					text-align:center; font-size:28px;
+					}
+					.main h3 a{
+						font-size:45px;
+						}
+						.main h3 a:hover{
+							text-decoration:none;
+							}
+			ul.images{
+				margin:20px;
+				overflow:hidden;
+				clear:both;
+				}				
+				ul.images li{
+					float:left;
+					padding:20px; margin:0px 20px 0px 0px;
+					border:1px solid #E8E8E8; border-radius:4px;
+					}
+					ul.images li:last-child{
+						margin:0px;
+						}
+					ul.images img{
+						width:251px; height:auto;
+						}
+			.footer{
+				text-align:center;
+				clear:both;
+				}
+				.footer ul{
+					margin:10px 0px 20px 0px;
+					}
+					.footer ul li{
+						display:inline-block; *display:inline; zoom:1;
+						}
+					.footer ul li,
+					.footer ul li a{
+						font-family: 'NeoplantaBGBold'; font-size:16px;color:#2a5f2c;text-decoration:none;
+						}
+						.footer ul li a:hover{
+							text-decoration:underline;
+							}
+/*
+= Contact
+-------------------------------------------------------------------------------------- */		
+		input[type=text]{
+			height:33px; width:269px;
+			padding:0px 10px 0px 10px; margin:5px 0px 17px 0px;
+			font-size:12px; color:#444444;
+			background-color:#f1f1f1;
+			border:none; border-top:1px solid #c9c9c9; border-radius:5px;
+			}
+		textarea{
+			height: 120px;
+			margin-bottom: 25px;
+			padding: 10px;
+			resize: none;
+			width: 420px;
+			font-size:12px; color:#444444;
+			background-color:#f1f1f1;
+			border:none; border-top:1px solid #c9c9c9; border-radius:5px;
+			}
+		input.submitButton{
+			height:34px; width:112px;
+			margin-bottom:10px;
+			font-family:'NeoplantaBGRegular', Georgia, "Times New Roman", Times, serif; font-size:14px; color:white;
+			background:url(../images/read-more-bgr.png) 0 0 no-repeat;
+			border:none;
+			}
+		label{
+			display:block;
+		    color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:16px;
+			}
+		.title {
+			position:relative;
+			padding:10px 50px 10px 50px; margin:0px 25px;
+			border-bottom:1px solid #e8e8e8;
+			}
+			.title:after {
+				content:"";
+				display:block;
+				background-image:url(../images/ornament.png); background-color:#fff; background-position:center center; background-repeat:no-repeat;
+				position:absolute; bottom:-11px; left:50%;
+				width:63px; height:13px;
+				padding-left:8px; margin-left:-35px;
+				line-height:0px;
+				background-color:white;
+			}
+			.title h2{
+				color: grey;font-family:'NeoplantaBGRegular', Georgia, "Times New Roman"; font-size: 38px;font-weight: normal;
+				letter-spacing: -0.2px;
+				line-height: 41px;
+				text-align: center;
+				}
+		.form h4{
+			font-size: 16px;
+    		font-weight: normal;
+    		margin-bottom: 15px;
+			}
+		.form h5{
+			margin-bottom:22px;
+			color: #326730;font-size: 22px;font-weight: normal;
+			}
+		.form{
+			width:443px;
+			}
+			.form.right ul{
+				width:287px;
+				margin: 0 19px 19px 0; padding:0px 0px 22px 0px;
+				border-bottom:1px solid #e8e8e8;
+				}
+				.form li{
+					color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;
+					}
+				.form li a{
+					color: #79313A;font-family:Arial, Helvetica, sans-serif; 
+					}
+		.form.left{
+			float:left;
+			margin:60px 12px 40px 25px;
+			}					
+		.form.right{
+			float:right;
+			margin:60px 25px 40px 12px;
+			}	
+				

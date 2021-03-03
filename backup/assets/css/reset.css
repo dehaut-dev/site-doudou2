@@ -1,0 +1,19 @@
+* {padding:0; margin:0;}
+html, body {height:100%; z-index:1;}
+html, body, form, fieldset {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+div {position:relative;}
+a, input, textarea, fieldset {font-family:Verdana, Geneva,Arial, Helvetica, sans-serif; border:0; padding:0; margin:0; text-decoration:none;}
+a {color:#589aad;}
+a span, button {cursor:pointer; border:0;}
+img {border:0;}
+ul, ol {list-style-type:none;}
+
+/* CLEAR FLOATS
+---------------------------------*/
+.clearfix:after { content: "."; display: block;	height: 0; clear: both;  visibility: hidden;}
+.clearfix {	display: inline-block; }
+/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}
+.clearfix {	display: block;	}

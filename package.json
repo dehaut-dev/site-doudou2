@@ -1,0 +1,69 @@
+{
+  "name": "bulma-start",
+  "version": "0.0.2",
+  "description": "Start package for Bulma",
+  "keywords": [
+    "sass",
+    "bulma",
+    "css",
+    "start"
+  ],
+  "author": {
+    "name": "Jeremy Thomas",
+    "email": "bbxdesign@gmail.com",
+    "url": "http://jgthms.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "bulma": "^0.6.0",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1"
+  },
+  "scripts": {
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "node-sass _sass/main.scss css/main.css",
+    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "npm run css-deploy && npm run js-build",
+    "js-build": "babel _javascript --out-dir lib",
+    "js-watch": "npm run js-build -- --watch",
+    "start": "npm run css-watch | npm run js-watch"
+  },
+  "gitHead": "d8d56bb2e0cfaf101f7b9cd6ae5da0977dd8112a",
+  "_id": "bulma-start@0.0.2",
+  "_shasum": "472507881b1b27af29e009c8599503e1462d2031",
+  "_from": "bulma-start@",
+  "_npmVersion": "3.10.10",
+  "_nodeVersion": "6.11.0",
+  "_npmUser": {
+    "name": "jgthms",
+    "email": "bbxdesign@gmail.com"
+  },
+  "dist": {
+    "shasum": "472507881b1b27af29e009c8599503e1462d2031",
+    "tarball": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jgthms",
+      "email": "bbxdesign@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bulma-start-0.0.2.tgz_1507895382789_0.6795484863687307"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.2.tgz",
+  "dependencies": {
+    "dragdealer": "^0.10.0",
+    "gsap": "^1.20.4",
+    "jquery": "^3.3.1",
+    "requirejs": "^2.3.5",
+    "scrollmagic": "^2.0.5"
+  }
+}
